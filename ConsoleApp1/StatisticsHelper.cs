@@ -4,8 +4,11 @@ public static class StatisticsHelper
 {
     public static double CalculateAverage(int[] values)
     {
-        if (values.Length == 0)
+        if (values == null || values.Length == 0)
+        {
+            Console.WriteLine("No values provided.");
             return 0;
+        }
 
         int sum = 0;
 
