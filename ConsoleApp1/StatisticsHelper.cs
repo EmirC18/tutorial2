@@ -49,7 +49,7 @@ public static class StatisticsHelper
             return 0;
         }
 
-        int min = values[0];
+        int min = int.MaxValue;
 
         foreach (var v in values)
         {
