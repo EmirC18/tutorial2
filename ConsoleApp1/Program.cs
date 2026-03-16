@@ -1,3 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿namespace ConsoleApp1;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] values = { 2, 4, 6, 8, 10 };
+
+        double average = StatisticsHelper.CalculateAverage(values);
+
+        Console.WriteLine($"Average value: {average}");
+    }
+}
