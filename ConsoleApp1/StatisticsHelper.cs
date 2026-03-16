@@ -40,4 +40,25 @@ public static class StatisticsHelper
 
         return max;
     }
+    
+    public static int CalculateMin(int[] values)
+    {
+        if (values == null || values.Length == 0)
+        {
+            Console.WriteLine("No values provided.");
+            return 0;
+        }
+
+        int min = values[0];
+
+        foreach (var v in values)
+        {
+            if (v < min)
+            {
+                min = v;
+            }
+        }
+
+        return min;
+    }
 }
