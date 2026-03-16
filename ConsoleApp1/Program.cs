@@ -8,6 +8,6 @@ class Program
 
         double average = StatisticsHelper.CalculateAverage(values);
 
-        Console.WriteLine($"Average value: {average}");
+        Console.WriteLine($"Calculated average: {average}");
     }
 }
